@@ -1,0 +1,39 @@
+
+
+body {
+  background: bisque;
+  font-family: Arial, sans-serif;
+   background-image: url(image/weather.jpg);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2opx;
+  color:rgb(152, 152, 206);
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; 
+}  
+
+#currentWeather {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(103, 95, 110);
+}
+#currentWeather h2{
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.forecast{
+  margin-top: 20px;
+  background-color: blue;
+}
+#forecastIfo{
+  background: rgb(70, 70, 141);
+}
+  
+  

@@ -1,0 +1,38 @@
+
+
+Project Idea: Weather Forecast Application
+
+Basic Story:
+The Weather Forecast Application allows users to search for the weather forecast of a specific location. Users can enter the name of a city or provide the latitude and longitude coordinates to retrieve the weather information. The application will display the current weather conditions, including temperature, humidity, wind speed, and a brief description of the weather. Additionally, users can view a 5-day forecast that provides the expected weather conditions for the upcoming days.
+
+Core Features of MVP:
+1. User Input: Provide an input field where users can enter the city name or latitude and longitude coordinates.
+2. Search Functionality: Implement an event listener on a search button that triggers the weather search based on the user input.
+3. Display Current Weather: Retrieve the current weather data from a public weather API based on the user's search and display it on the page. Include information such as temperature, humidity, wind speed, and weather description.
+4. Display 5-Day Forecast: Retrieve the 5-day forecast data from the weather API and display it in a separate section. Each day should show the date, weather condition, and temperature.
+5. Responsive Design: Ensure that the application is responsive and displays well on different screen sizes.
+
+API Data and Usage:
+Use a public weather API, such as OpenWeatherMap, to access weather data. The API should provide endpoints to retrieve the current weather and the forecast for a specific location. You will need to register for an API key to access the weather data. Make asynchronous API requests to retrieve the JSON weather data and parse it to extract the necessary information for display.
+
+Challenges:
+1. Asynchronous API Requests: Implementing the asynchronous code to handle the API requests and responses.
+2. Data Parsing: Extracting the relevant information from the JSON weather data and formatting it for display.
+3. UI Design and Styling: Creating an appealing and user-friendly interface for the application using HTML and CSS.
+4. Error Handling: Implementing error handling for cases where the API request fails or returns invalid data.
+#licence
+Copyright (c) Titus Munyoki.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files , to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Meeting Project Requirements:
+- HTML/CSS/JS Frontend: Build the user interface using HTML for structure and CSS for styling. Use JavaScript to handle the interactivity and API requests.
+- Asynchronous API Communication: Use JavaScript's fetch function or similar methods to make asynchronous requests to the weather API and handle the responses.
+- Single Page Application: Create a single HTML file that includes all the necessary elements and components of the application. Avoid redirects or multiple HTML pages.
+- Event Listeners: Implement event listeners for the search button, enabling users to trigger the weather search. Additional event listeners can be added for other interactive elements, such as buttons to switch between different views.
+- Interactivity: Provide interactivity through the search functionality, where users can input a location and receive weather data dynamically. No need to persist the interactions after reloading the page.
+- DRY Code: Write modular and reusable code by utilizing functions to abstract repetitive tasks and avoid code duplication.
+
