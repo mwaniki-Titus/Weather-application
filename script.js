@@ -1,7 +1,7 @@
 const apiKey = 'fde0f37934884868bc890643232906';
 
 const searchButton = document.getElementById('searchButton');
-searchButton.addEventListener('click', searchWeather);
+searchButton.addEventListener('click' , searchWeather)
 
 function searchWeather() {
   const locationInput = document.getElementById('locationInput');
@@ -45,7 +45,7 @@ function displayCurrentWeather(currentWeather) {
 }
 
 function displayForecast(forecast) {
-  const forecastContainer = document.getElementById('forecast');
+  const forecastContainer = document .getElementById('forecast');
 
   forecastContainer.innerHTML = '';
 
