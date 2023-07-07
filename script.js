@@ -8,11 +8,13 @@ function searchWeather() {
   const location = locationInput.value.trim();
 
   if (location !== '') {
+    
     const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${encodeURIComponent(location)}&days=5`;
-
+   // Fetch weather data from the WeatherAPI
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
+         // Call functions to display the current weather and forecast
         displayCurrentWeather(data.current);
         displayForecast(data.forecast.forecastday);
       })
@@ -27,7 +29,7 @@ function displayCurrentWeather(currentWeather) {
   const currentWeatherContainer = document.getElementById('currentWeather');
 
   currentWeatherContainer.innerHTML = '';
-
+ // Extract relevant data from the current weather object
   const temperature = currentWeather.temp_c;
   const humidity = currentWeather.humidity;
   const windSpeed = currentWeather.wind_kph;
@@ -49,14 +51,17 @@ function displayForecast(forecast) {
 
   forecastContainer.innerHTML = '';
 
+  // Create the initial forecast information HTML
   let forecastInfo = '<h2>5-Day Forecast</h2>';
-
+  
+  // Iterate over each day in the forecast array
   forecast.forEach(day => {
     const date = day.date;
     const weatherCondition = day.day.condition.text;
     const maxTemp = day.day.maxtemp_c;
     const minTemp = day.day.mintemp_c;
-
+   
+    // Append HTML markup for each forecast day
     forecastInfo += `
       <div>
         <p>Date: ${date}</p>
